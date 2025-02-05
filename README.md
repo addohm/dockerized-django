@@ -12,13 +12,13 @@
 
 5. Start a django project ex. `django-admin startproject [project_name]`
 
-#### If you already have a working project, skip to step 8
+### If you already have a working project, skip to step 8
 
 6. Enter the project folder `./django/[project_name]/` and create an app. (don't forget to add the app to your settings.py later)
 
 7. Start a django app ex. `django-admin startapp [app_name]`
 
-#### If you already have a working project
+### If you already have a working project
 
 8. Delete the settings.py file in `./django/[project_name]/[project_name]/`
 
@@ -41,4 +41,4 @@
 
 15. If there are no errors, your server should be up and running in debug mode and you should be able to navigate to `http://[your.server.i.p]:8000`.  You should also be able to navigate to your admin panel at `http://[your.server.i.p]:8000/admin`.
 
-### PHASE 1 COMPLETE
+## PHASE 1 COMPLETE
