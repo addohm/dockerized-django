@@ -1,0 +1,36 @@
+name: dcdc
+services:
+  postgresdb:
+    image: postgres:17.2-alpine3.21
+    container_name: dcdc_postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    env_file:
+      - ./.env
+
+  django:
+    image: django:latest
+    container_name: dcdc_django
+    depends_on:
+      - postgresdb
+    volumes:
+      - ./staticfiles:/project/staticfiles
+      - ./media:/project/media
+    env_file:
+      - ./.env
+
+  nginx:
+    image: nginx:1.27.3-alpine-slim
+    container_name: dcdc_nginx
+    ports:
+      - "8001:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./staticfiles:/static:ro
+      - ./media:/media:ro
+    depends_on:
+      - django
+volumes:
+  postgres_data:
