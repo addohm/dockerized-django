@@ -1,4 +1,6 @@
 # This repository is in development.  Don't bother.
+---
+# Preparing your django project folder
 1. Set an environment variable 'PIPELINE' for the pipeline you're working in.  
     - Replace `mode` with either `development` or `production`
         - ex(lin). - `export PIPELINE=mode`
