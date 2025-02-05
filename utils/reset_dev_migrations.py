@@ -4,7 +4,7 @@ import sys
 
 '''
 Place this script in the main project directory.  This should be
-the same directory as manage.py.  
+the same directory as manage.py.  USE WITH CAUTION
 '''
 # Get the file path of this script
 root = sys.path[0]

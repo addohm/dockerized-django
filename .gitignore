@@ -1,4 +1,7 @@
-NOTES.md
+/django/project/django_project
+/django/project/fileshare/*
+/django/project/media/*
+/django/project/staticfiles/*
 
 ### Django ###
 *.log
