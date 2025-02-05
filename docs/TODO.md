@@ -1,0 +1,1 @@
+* Publish barebones to dockerhub

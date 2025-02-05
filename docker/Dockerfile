@@ -31,7 +31,9 @@ RUN pip --version
 WORKDIR /project
 
 # Copy the entire current directory contents into the container at /project
-COPY --chown=django:django . .
+COPY --chown=django:django ../django/project/* .
+COPY --chown=django:django ../django/files/gunicorn_conf.py .
+COPY --chown=django:django entrypoint.sh .
 
 # Give the entrypoint script executable permissions
 RUN chmod +x entrypoint.sh
