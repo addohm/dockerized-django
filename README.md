@@ -1,6 +1,6 @@
 # This repository is in development.  Don't bother.
 ---
-# Preparing your django project folder
+# Phase 1: Preparing your django project folder
 1. Set an environment variable 'PIPELINE' for the pipeline you're working in.  
     - Replace `mode` with either `development` or `production`
         - ex(lin). - `export PIPELINE=mode`
@@ -44,3 +44,5 @@
 15. If there are no errors, your server should be up and running in debug mode and you should be able to navigate to `http://[your.server.i.p]:8000`.  You should also be able to navigate to your admin panel at `http://[your.server.i.p]:8000/admin`.
 
 ## PHASE 1 COMPLETE
+---
+# Phase 2 Building your docker image
